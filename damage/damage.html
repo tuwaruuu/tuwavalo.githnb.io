@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VALORANT 武器ダメージ表示</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <h1>VALORANT 武器ダメージ確認</h1>
+
+    <label for="weaponSelect">武器を選択：</label>
+    <select id="weaponSelect">
+        <option value="sheriff">シェリフ</option>
+        <option value="phantom">ファントム</option>
+        <option value="outlaw">アウトロー</option>
+        <option value="outlaw2">アウトロー2</option>
+        <option value="outlaw3">アウトロー3</option>
+        <option value="outlaw4">アウトロー4</option>
+        <option value="outlaw5">アウトロー5</option>
+        <option value="outlaw6">アウトロー6</option>
+        <option value="outlaw7">アウトロー7</option>
+    </select>
+
+    <div id="container">
+        <!-- 仮のシルエット画像 -->
+        <img src="body-1-p3.svg" alt="人型シルエット" id="silhouette" />
+
+        <!-- クリックエリア -->
+        <div class="hitbox" id="head" title="頭"></div>
+        <div class="hitbox" id="body" title="胴"></div>
+        <div class="hitbox" id="legs" title="足"></div>
+    </div>
+
+    <p id="damageDisplay">武器と部位を選択してください。</p>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
